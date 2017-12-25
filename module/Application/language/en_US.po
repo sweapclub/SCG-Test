@@ -6,3 +6,9 @@ msgstr "Hello"
 
 msgid "learn more"
 msgstr "Learn more"
+
+msgid "First Function"
+msgstr "First Function"
+
+msgid "Second Function"
+msgstr "Second Function"

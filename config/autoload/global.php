@@ -4,5 +4,5 @@ use Zend\Session\Validator\RemoteAddr;
 use Zend\Session\Validator\HttpUserAgent;
 
 return [
-    
+
 ];

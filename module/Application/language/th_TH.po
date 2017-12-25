@@ -6,3 +6,9 @@ msgstr "สวัสดี"
 
 msgid "learn more"
 msgstr "ดูต่อ"
+
+msgid "First Function"
+msgstr "ฟังก์ชั่นแรก"
+
+msgid "Second Function"
+msgstr "ฟังก์ชั่นสอง"

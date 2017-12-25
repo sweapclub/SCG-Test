@@ -29,24 +29,37 @@ return array(
                     ),
                 ),
             ),
-            /*
-            'xxx' => array(
+            
+            'test' => array(
                 'type' => 'Segment',
                 'options' => array(
-                    'route'    => '/engine/[:lang/[:action[/][:id/]]]',
+                    // 'route'    => '/test/[:lang/[:action[/][:id/]]]',
+                    // 'route'    => '/test/[:func/:number/]',
+                    // 'constraints' => array(
+                    //     'func' => '[a-zA-Z][a-zA-Z0-9_-]*',
+                    //     'number' => '[0-9]*',
+                    // ),
+                    // 'defaults' => array(
+                    //     'controller' => 'Application\Controller\Test',
+                    //     'action' => 'index',
+                    //     'func' => '',
+                    //     'number' => '',
+                    // ),
+
+                    'route'    => '/test/[:lang/[:action[/][:number/]]]',
                     'constraints' => array(
                         'lang'   => '[a-zA-Z]*',
                         'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
-                        'id' => '[0-9_-]*[a-zA-Z0-9_-]*',
+                        'number' => '[0-9_-]*[a-zA-Z0-9_-]*',
                     ),
                     'defaults' => array(
-                        'controller' => 'Application\Controller\Xxx',
+                        'controller' => 'Application\Controller\Test',
                         'action' => 'index',
-                        'id' => '',
+                        'number' => '',
                         'lang' => 'th',
                     ),
                 ),
-            ),*/
+            ),
         ),
     ),
     'service_manager' => array(
@@ -72,7 +85,7 @@ return array(
         'invokables' => array(
             //add controller
             'Application\Controller\Index' => 'Application\Controller\IndexController',
-            //'Application\Controller\Xxx' => 'Application\Controller\XxxController',
+            'Application\Controller\Test' => 'Application\Controller\TestController',
         ),
     ),
      
@@ -83,6 +96,10 @@ return array(
             #index
             'application/index/index' => __DIR__ . '/../view/index/index.phtml',
             'application/index/user' => __DIR__ . '/../view/index/user.phtml',
+            'application/test/index' => __DIR__ . '/../view/test/index.phtml',
+            'application/test/func1' => __DIR__ . '/../view/test/index.phtml',
+            'application/test/func2' => __DIR__ . '/../view/test/index.phtml',
+            
             #layout
             'layout/layout' => __DIR__ . '/../view/layout/layout.phtml',
 			#404

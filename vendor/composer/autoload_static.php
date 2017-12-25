@@ -75,7 +75,6 @@ class ComposerStaticInit0b410cc0ace1997da8cac296df5d8247
             'Zend\\Crypt\\' => 11,
             'Zend\\Console\\' => 13,
             'Zend\\Config\\' => 12,
-            'Zend\\ComponentInstaller\\' => 24,
             'Zend\\Code\\' => 10,
             'Zend\\Captcha\\' => 13,
             'Zend\\Cache\\' => 11,
@@ -342,10 +341,6 @@ class ComposerStaticInit0b410cc0ace1997da8cac296df5d8247
         'Zend\\Config\\' => 
         array (
             0 => __DIR__ . '/..' . '/zendframework/zend-config/src',
-        ),
-        'Zend\\ComponentInstaller\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/zendframework/zend-component-installer/src',
         ),
         'Zend\\Code\\' => 
         array (
